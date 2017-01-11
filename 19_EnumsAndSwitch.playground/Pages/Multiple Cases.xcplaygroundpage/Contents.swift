@@ -7,7 +7,7 @@ enum Quality {
     case bad, poor, acceptable, good, great, terrible
 }
 
-let quality = Quality.good
+let quality = Quality.terrible
 /*:
  But a default case might cause you problems later on if you add new cases to the enum. The switch statement will use the default case for your new value, which may not be what you wanted. 
  

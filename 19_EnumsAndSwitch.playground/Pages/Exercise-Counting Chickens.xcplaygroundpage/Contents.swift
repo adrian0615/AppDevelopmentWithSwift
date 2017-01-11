@@ -10,7 +10,12 @@ chickens
 
 var chickenOfInterestCount = 0
 for chicken in chickens {
-    hilariousChicken = 
+    if chicken.temper == .hilarious {
+        chickenOfInterestCount += 1
+    }
+    if chicken.breed == .leghorn {
+        chickenOfInterestCount += 1
+    }
 }
 chickenOfInterestCount
 //: - callout(Exercise): Update the code in the `for…in` loop to only count interesting chickens, like `.hilarious` `.leghorn`s. Check out the autocompletion popup to see what the possible values for each enum are.

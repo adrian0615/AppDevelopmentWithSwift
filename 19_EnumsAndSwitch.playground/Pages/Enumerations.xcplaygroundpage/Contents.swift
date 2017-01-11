@@ -28,8 +28,9 @@ let choice = LunchChoice.burger
  
  - experiment: Create some constants yourself for different cases in the enum. Notice how autocompletion shows you the possible options.
 */
-
-
+let burger = LunchChoice.burger
+let soup = LunchChoice.soup
+let pasta = LunchChoice.pasta
 
 /*:
  Next learn about how the type system understands enums.\

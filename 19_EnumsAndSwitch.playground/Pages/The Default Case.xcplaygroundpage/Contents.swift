@@ -7,7 +7,7 @@ enum Quality {
     case bad, poor, acceptable, good, great
 }
 
-let quality = Quality.great
+let quality = Quality.acceptable
 
 //: The switch statement is a little different to the ones you’ve seen up to now:
 switch quality {
@@ -15,10 +15,14 @@ case .bad:
     print("That really won't do")
 case .poor:
     print("That's not good enough")
-default:
+case .acceptable:
     print("OK, I'll take it")
+case .good:
+    print("I like it")
+default:
+    print("Awesome!")
 }
-/*: 
+/*:
  The switch statement doesn't have a case for every possible value of the enum. Instead, there is a `default` keyword which will be used if no other matches are found. This is similar to the final `else` clause when using an if statement.
  
  - experiment: Change the value of `quality` to test when the default case is used, and when specific cases are used.\
